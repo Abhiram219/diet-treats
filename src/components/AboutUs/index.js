@@ -1,10 +1,21 @@
 import React, { useState } from 'react';
+import Header from '../../common-components/Header';
+import Footer from '../../common-components/Footer';
+
 
 function AboutUs() {
   return (
-    <div className="abc">
-        About Us
-    </div>
+    <React.Fragment>
+        <Header />
+
+        
+        <div className="home__container">
+            About Us
+        </div>
+
+
+        <Footer />
+      </React.Fragment>
   );
 }
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory } from "react-router-dom";
-import {headerMenuItems} from '../constants/JsonData'
-import DietTreatsLogo from '../../images/DietTreatsLogo.png'
+import {headerMenuItems} from '../constants/JsonData';
+import DietTreatsLogo from '../../assets/images/DietTreatsLogo.png';
 import './app.scss';
 
 function Header(props) {

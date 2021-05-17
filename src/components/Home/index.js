@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Header from '../../common-components/Header'
-import Footer from '../../common-components/Footer'
+import Header from '../../common-components/Header';
+import Footer from '../../common-components/Footer';
 
 function Home() {
   return (
@@ -8,7 +8,7 @@ function Home() {
         <Header />
 
         
-        <div className="abc">
+        <div className="home__container">
             Welcome to home
         </div>
 

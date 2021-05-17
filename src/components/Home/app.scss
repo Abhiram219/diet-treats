@@ -1,0 +1,16 @@
+@import '../../scss/constants.scss';
+@import '../../scss/colors.scss';
+
+.home{
+     // Mobile Styling
+     @media screen and (max-width: $screen-width) {
+        
+    }
+
+    // Desktop Styling
+    @media screen and (min-width: $screen-width) {
+        &__container {
+            
+        }
+    }
+}
