@@ -11,7 +11,7 @@ function Header(props) {
   return (
     <div className="header__container">
 
-        <div className="header__logo"><img src={DietTreatsLogo}/></div>
+        <div className="header__logo" onClick={()=>history.push('/')} ><img src={DietTreatsLogo}/></div>
 
         <div className="header__subContainer">
           <div className="header__menu">

@@ -10,7 +10,36 @@
     // Desktop Styling
     @media screen and (min-width: $screen-width) {
         &__container {
-            
+            width: calc(100% - 270px);
+            margin: auto;
+        }
+
+        &__banner {
+            width: 100%;
+
+            img{
+                width: 100%;
+                border: 1px solid rgba(0,0,0,0.1);
+            }
+        }
+
+        &__content {
+            display: flex;
+            flex-flow: column;
+            align-items: start;
+
+            h2{
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 36px;
+                letter-spacing: .235294px;
+                color: #212121;
+            }
+
+            li{
+                text-align: left;
+                padding: 4px,0;
+            }
         }
     }
 }
