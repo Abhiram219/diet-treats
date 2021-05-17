@@ -1,0 +1,77 @@
+@import '../../scss/constants.scss';
+@import '../../scss/colors.scss';
+
+.header{
+    // Mobile Styling
+    @media screen and (max-width: $screen-width) {
+        
+    }
+
+    // Desktop Styling
+    @media screen and (min-width: $screen-width) {
+        &__container {
+            width: calc(100% - 270px);
+            margin-left: 135px;
+            margin-right: 135px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            padding: 12px 0;
+        }
+
+        &__container1 {
+            width: 1170px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            background: #fff;
+        }
+
+        &__logo {
+            img{
+                height: 48px;
+                border-radius: 4px;
+            }
+        }
+
+        &__subContainer {
+            display: flex;
+            align-items: center;
+        }
+
+        &__menu{
+            display: inline-flex;
+        }
+
+        &__menuItem {
+            margin-left: 48px;
+            cursor: pointer;
+        }
+
+        &__menuItem:hover {
+            color: $orange;
+        }
+
+        &__rcbButton{
+            // height: 40px;
+            background-color: $orange;
+            color: #fff;
+            margin: 0 0 0 48px;
+            font-family: Lato,sans-serif;
+            font-size: 14px;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 2.7;
+            letter-spacing: .8px;
+            text-align: center;
+            padding: 0 8px ;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+    }
+}
+
+
+
