@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { withRouter } from "react-router";
 import Home from './components/Home/index';
 import ContactUs from './components/ContactUs'
+import Plans from './components/Plans';
 import AboutUs from './components/AboutUs';
 
 import './App.css';
@@ -16,6 +17,7 @@ function App() {
 
           <Route path="/about"> <AboutUs /> </Route>
           <Route path="/contact"> <ContactUs /> </Route>
+          <Route path="/plans"> <Plans /> </Route>
           <Route path="/"> <Home /> </Route>
 
         </Switch>

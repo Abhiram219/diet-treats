@@ -34,3 +34,43 @@ export const footerNavLinks = [
     svg: <TwitterIcon />
   },
 ];
+
+export const pricingAndFeatures = [
+  {
+    name: 'One Time',
+    price: 'INR 400*',
+    features: [
+      'test',
+      'test',
+      'test',
+      'test'
+    ]
+  },
+  {
+    name: 'Monthly',
+    price: 'INR 1350*',
+    features: [
+      'Customised Diets',
+      'Weekly Follow Ups',
+      'Change in plan based on outcome'
+    ]
+  },
+  {
+    name: 'Quarterly',
+    price: 'INR 3600*',
+    features: [
+      'Customised Diets',
+      'Weekly Follow Ups',
+      'Change in plan based on outcome'
+    ]
+  },
+  {
+    name: 'Half Yearly',
+    price: 'INR 7600*',
+    features: [
+      'Customised Diets',
+      'Weekly Follow Ups',
+      'Change in plan based on outcome'
+    ]
+  }
+];
