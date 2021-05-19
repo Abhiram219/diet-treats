@@ -4,7 +4,43 @@
 .footer{
     // Mobile Styling
     @media screen and (max-width: $screen-width) {
-        
+        &__container {
+            width: calc(100% - 20px);
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: $white;
+            padding: 12px 0;
+            border-top: 1px solid rgba(0,0,0,0.2);
+            margin-top: 112px;
+        }
+
+        &__subContainer {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        &__logo {
+            img{
+                height: 48px;
+                border-radius: 4px;
+            }
+        }
+
+        &__subContainer {
+            display: flex;
+            align-items: center;
+        }
+
+        &__navLinks{
+            display: inline-flex;
+        }
+
+        &__navItem {
+            // margin-left: 48px;
+            cursor: pointer;
+        }
     }
 
     // Desktop Styling

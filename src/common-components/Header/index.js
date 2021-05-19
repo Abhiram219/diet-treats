@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useHistory } from "react-router-dom";
 import {headerMenuItems} from '../constants/JsonData';
 import DietTreatsLogo from '../../assets/images/DietTreatsLogo.png';
+import {ReactComponent as HamburgerIcon} from '../../assets/icons/hamburger.svg';
+import SideBar from './SideBar'
 import './app.scss';
 
 function Header(props) {
@@ -9,11 +11,19 @@ function Header(props) {
   let history = useHistory();
 
   return (
-    <div className="header__container">
+    <React.Fragment>
+      <SideBar />
+      
+      <div className="header__container">
 
-        <div className="header__logo" onClick={()=>history.push('/')} ><img src={DietTreatsLogo}/></div>
+        <div className="header__subContainer1" > 
+          <div className="mobile-only" >  <HamburgerIcon /> </div>
+          
+          <div className="header__logo" onClick={()=>history.push('/')} ><img src={DietTreatsLogo}/></div>
+        </div>
 
-        <div className="header__subContainer">
+
+        <div className="header__subContainer2">
           <div className="header__menu">
             {headerMenuItems.map( (item,index) => 
               <div 
@@ -29,8 +39,10 @@ function Header(props) {
             Request a Call Back
           </div>
         </div>
-        
-    </div>
+
+      </div>
+    </React.Fragment>
+   
   );
 }
   
