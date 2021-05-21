@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/diet-treats/static/css/main.45de6ef9.chunk.css",
-    "main.js": "/diet-treats/static/js/main.56ebb620.chunk.js",
-    "main.js.map": "/diet-treats/static/js/main.56ebb620.chunk.js.map",
+    "main.css": "/diet-treats/static/css/main.b3f64564.chunk.css",
+    "main.js": "/diet-treats/static/js/main.26b9ec07.chunk.js",
+    "main.js.map": "/diet-treats/static/js/main.26b9ec07.chunk.js.map",
     "runtime-main.js": "/diet-treats/static/js/runtime-main.328e657a.js",
     "runtime-main.js.map": "/diet-treats/static/js/runtime-main.328e657a.js.map",
-    "static/js/2.de6efd8c.chunk.js": "/diet-treats/static/js/2.de6efd8c.chunk.js",
-    "static/js/2.de6efd8c.chunk.js.map": "/diet-treats/static/js/2.de6efd8c.chunk.js.map",
+    "static/js/2.fb0c7664.chunk.js": "/diet-treats/static/js/2.fb0c7664.chunk.js",
+    "static/js/2.fb0c7664.chunk.js.map": "/diet-treats/static/js/2.fb0c7664.chunk.js.map",
     "index.html": "/diet-treats/index.html",
-    "static/css/main.45de6ef9.chunk.css.map": "/diet-treats/static/css/main.45de6ef9.chunk.css.map",
-    "static/js/2.de6efd8c.chunk.js.LICENSE.txt": "/diet-treats/static/js/2.de6efd8c.chunk.js.LICENSE.txt",
+    "static/css/main.b3f64564.chunk.css.map": "/diet-treats/static/css/main.b3f64564.chunk.css.map",
+    "static/js/2.fb0c7664.chunk.js.LICENSE.txt": "/diet-treats/static/js/2.fb0c7664.chunk.js.LICENSE.txt",
     "static/media/DietTreatsLogo.87902118.png": "/diet-treats/static/media/DietTreatsLogo.87902118.png",
     "static/media/HomePageBaner.6d135cbc.jpeg": "/diet-treats/static/media/HomePageBaner.6d135cbc.jpeg",
     "static/media/facebook.96e9f858.svg": "/diet-treats/static/media/facebook.96e9f858.svg",
+    "static/media/hamburger.846f4197.svg": "/diet-treats/static/media/hamburger.846f4197.svg",
     "static/media/insta.e4388d28.svg": "/diet-treats/static/media/insta.e4388d28.svg",
     "static/media/right-arrow.601c419b.svg": "/diet-treats/static/media/right-arrow.601c419b.svg",
     "static/media/twitter.8a30a414.svg": "/diet-treats/static/media/twitter.8a30a414.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.328e657a.js",
-    "static/js/2.de6efd8c.chunk.js",
-    "static/css/main.45de6ef9.chunk.css",
-    "static/js/main.56ebb620.chunk.js"
+    "static/js/2.fb0c7664.chunk.js",
+    "static/css/main.b3f64564.chunk.css",
+    "static/js/main.26b9ec07.chunk.js"
   ]
 }
