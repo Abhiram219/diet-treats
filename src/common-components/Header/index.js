@@ -10,14 +10,26 @@ function Header(props) {
 
   let history = useHistory();
 
+  const [SideBarDispaly, setSideBarDisplay] = useState(-110);
+
+  const closeSideBar = () => {
+    console.log('close sb')
+    setSideBarDisplay(-110);
+  }
+
+  const openSideBar = () => {
+    console.log('open sb')
+    setSideBarDisplay(0);
+  }
+
   return (
     <React.Fragment>
-      <SideBar />
+      <SideBar SideBarDispaly={SideBarDispaly} closeSideBar={closeSideBar}/>
       
       <div className="header__container">
 
         <div className="header__subContainer1" > 
-          <div className="mobile-only" >  <HamburgerIcon /> </div>
+          <div className="mobile-only" onClick={openSideBar} >  <HamburgerIcon /> </div>
           
           <div className="header__logo" onClick={()=>history.push('/')} ><img src={DietTreatsLogo}/></div>
         </div>

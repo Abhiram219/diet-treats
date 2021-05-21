@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useHistory } from "react-router-dom";
 import {headerMenuItems} from '../constants/JsonData';
 import DietTreatsLogo from '../../assets/images/DietTreatsLogo.png';
@@ -9,28 +9,27 @@ function SideBar(props) {
 
   let history = useHistory();
 
-  const [SideBarDispaly, setSideBarDisplay] = useState('block');
-
-  const closeSideBar = () => {
-    setSideBarDisplay('none');
-  }
-
   return (
-    <div className="sideBar__container mobile-only" style={{display: SideBarDispaly}}>
+    <div className="sideBar">
+
+      {props.SideBarDispaly === 0 ? <div className="sideBar__backdrop" onClick={props.closeSideBar}></div> : ''}
+      
+      <div className="sideBar__container mobile-only"  onClick={(e)=> { e.stopPropagation() } } style={{transform:` translate(${props.SideBarDispaly}%)`}}>
         
-        <div className="sideBar__logo"  onClick={()=>history.push('/')} ><img src={DietTreatsLogo}/></div>
+        <div className="sideBar__logo"  onClick={()=> { props.closeSideBar(); history.push('/');  } } ><img src={DietTreatsLogo}/></div>
 
         <div className="sideBar__menu">
-            {headerMenuItems.map( (item,index) => 
-              <div 
-                onClick={()=>{  closeSideBar(); history.push(item.url)}} 
-                key={index} className="sideBar__menuItem"
-              >
-                {item.name}
-              </div>  
-            )}
-          </div>
+          {headerMenuItems.map( (item,index) => 
+            <div 
+              onClick={()=>{ props.closeSideBar(); history.push(item.url)}} 
+              key={index} className="sideBar__menuItem"
+            >
+              {item.name}
+            </div>  
+          )}
+        </div>
         
+      </div>
     </div>
   );
 }
