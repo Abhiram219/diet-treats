@@ -22,6 +22,8 @@ function PlanCard(props) {
             </div>
           )} 
       </div>
+
+      <button className="planCard__book"> Select </button>
     
     </div>
 

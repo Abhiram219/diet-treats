@@ -19,13 +19,23 @@
         &__subContainer {
             display: inline-flex;
             align-items: center;
+            position: relative;
         }
 
         &__logo {
             img{
-                height: 48px;
+                height: 42px;
                 border-radius: 4px;
             }
+        }
+
+        &__inc {
+            margin-left: 12px;
+            position: absolute;
+            width: 100vw;
+            bottom: -24px;
+            font-size: 14px;
+            text-align: left;
         }
 
         &__subContainer {
@@ -68,6 +78,10 @@
                 height: 48px;
                 border-radius: 4px;
             }
+        }
+
+        &__inc {
+            margin-left: 12px;
         }
 
         &__subContainer {

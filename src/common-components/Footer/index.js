@@ -11,7 +11,7 @@ function Footer(props) {
 
       <div className="footer__subContainer">
         <div className="footer__logo"> <img src={DietTreatsLogo} /> </div>
-        <div style={{marginLeft:12}}> © 2021 Diet Treats, Inc. All rights reserved. </div>
+        <div className="footer__inc" > © 2021 Diet Treats, Inc. All rights reserved. </div>
       </div>
       
 

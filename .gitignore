@@ -113,7 +113,7 @@ dist
 /coverage
 
 # production
-build (Commenting this to host as github
+build 
 
 # misc
 .DS_Store
