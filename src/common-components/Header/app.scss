@@ -45,6 +45,11 @@
         &__menuItem {
             margin-left: 48px;
             cursor: pointer;
+
+            a{
+                text-decoration: none;
+                color: $black;
+            }
         }
 
         &__menuItem:hover {
@@ -115,6 +120,11 @@
         &__menuItem {
             margin-left: 48px;
             cursor: pointer;
+
+            a{
+                text-decoration: none;
+                color: $black;
+            }
         }
 
         &__menuItem:hover {
@@ -206,9 +216,12 @@
         }
 
         &__menuItem {
-            // margin-left: 48px;
             padding: 8px;
             cursor: pointer;
+            a{
+                text-decoration: none;
+                color: $black;
+            }
         }
 
         &__menuItem:hover {
@@ -228,8 +241,15 @@
 
 
 .mobile-only{
-     // Mobile Styling
+     // Desktop Styling
      @media screen and (min-width: $screen-width) {
          display: none  !important;
      }
+}
+
+.desktop-only {
+    // Mobile Styling
+    @media screen and (max-width: $screen-width) {
+        display: none  !important;
+    }
 }

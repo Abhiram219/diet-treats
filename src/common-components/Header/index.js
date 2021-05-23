@@ -47,7 +47,9 @@ function Header(props) {
             )}
           </div>
 
-          <div className="header__rcbButton">
+          <div className="header__menuItem desktop-only"> <a href="tel:+91 9876543210">Contact Us</a> </div>
+
+          <div className="header__rcbButton" onClick={()=>history.push('/contact')} >
             Request a Call Back
           </div>
         </div>

@@ -11,10 +11,10 @@ export const  headerMenuItems = [
       name: 'About',
       url: '/about'
     },
-    {
-      name: 'Contact Us',
-      url: '/contact'
-    },
+    // {
+    //   name: 'Contact Us',
+    //   url: '/contact'
+    // },
 ];
 
 export const footerNavLinks = [
@@ -74,3 +74,23 @@ export const pricingAndFeatures = [
     ]
   }
 ];
+
+
+export const consultationTypes = [
+  {
+    name: 'Weight Loss',
+    value: '1'
+  },
+  {
+    name: 'Weight Gain',
+    value: '2'
+  },
+  {
+    name: 'Musle Gain',
+    value: '3'
+  },
+  {
+    name: 'Other',
+    value: '4'
+  },
+]

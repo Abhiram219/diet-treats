@@ -27,6 +27,8 @@ function SideBar(props) {
               {item.name}
             </div>  
           )}
+
+          <div className="sideBar__menuItem"> <a href="tel:+91 9876543210">Contact Us</a> </div>
         </div>
         
       </div>
