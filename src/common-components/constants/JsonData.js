@@ -11,6 +11,10 @@ export const  headerMenuItems = [
       name: 'About',
       url: '/about'
     },
+    {
+      name: 'Food',
+      url: '/food-order'
+    },
     // {
     //   name: 'Contact Us',
     //   url: '/contact'

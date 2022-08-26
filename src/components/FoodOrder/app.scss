@@ -1,0 +1,319 @@
+@import '../../scss/constants.scss';
+@import '../../scss/colors.scss';
+
+@font-face {
+    font-family: Lato;
+    src: url(https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap);
+  }
+
+.card{
+    margin-top: 16px;
+    /* border-color: grey; */
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    // font-family: Lato;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.fo{
+     // Mobile Styling
+     @media screen and (max-width: $screen-width) {
+        &__container {
+            padding: 60px 12px;
+            background-color: #f7f7f7;
+            position: relative;
+        }
+
+        &__refNo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 16px;
+            font-size: 12px;
+            opacity: 0.5;
+        }
+
+        &__footer{
+            margin-top: 16px;
+            font-size: 12px;
+            opacity: 0.5;
+        }
+
+        &__image{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // margin-top: 60px;
+            img{
+                width: 72px;
+            }
+        }
+     }
+
+    // Desktop Styling
+    @media screen and (min-width: $screen-width) {
+      
+
+    }
+}
+
+.order{
+    // Mobile Styling
+    @media screen and (max-width: $screen-width) {
+
+        display: flex;
+
+        justify-content: space-between;
+        // box-shadow: 6px 6px 6px 6px;
+        // border: rgb(0,0,0,0.6);
+        // border-style: solid;
+
+        &__cont1{
+            display: flex;
+            flex-flow: column;
+        };
+
+        &__cont2{
+            display: flex;
+            flex-flow: column;
+        };
+
+        &__title{
+            font-size: 12px;
+            color: rgba(0,0,0,.6);
+            margin-top: 2px;
+        };
+
+        &__desc{
+            margin-top: 8px;
+        }
+   }
+
+   // Desktop Styling
+   @media screen and (min-width: $screen-width) {
+     
+
+   }
+}
+
+
+
+.qr{
+    // Mobile Styling
+    @media screen and (max-width: $screen-width) {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+
+        &__button{
+            width: 80%;
+            height: 43px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background: #19bebb;
+            border-radius: 8px;
+            margin-top: 32px;
+            font-size: 12px;
+        }
+
+        &__qr {
+            margin-top: 36px;
+        }
+
+        &__text{
+            font-size: 12px;
+            opacity: 0.7;
+        }
+
+        &__square{
+            border: solid 4px;
+            margin-top: 6px;
+            opacity: 0.8;
+        }
+   }
+
+   // Desktop Styling
+   @media screen and (min-width: $screen-width) {
+     
+
+   }
+}
+
+.od{
+    // Mobile Styling
+    @media screen and (max-width: $screen-width) {
+        &__c1{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 16px;
+
+        }
+
+        &__title{
+            font-size: 12px;
+            color: rgba(0,0,0,.6);
+        }
+
+        &__desc{
+            margin-top: 2px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        &__c2{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 16px;
+            font-size: 15px;
+        }
+
+        &__c3{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 12px;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        &__c4{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 12px;
+            opacity: 0.5;
+            font-weight: 300;
+        }
+
+        &__c5{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 12px;
+            border-top: solid 1px;
+            border-color: gray;
+            opacity: 0.8;   
+            margin-top: 2px;   
+        }
+   }
+
+   // Desktop Styling
+   @media screen and (min-width: $screen-width) {
+     
+
+   }
+}
+
+.header{
+    // Mobile Styling
+    @media screen and (max-width: $screen-width) {
+        display: flex;
+        align-items: center;
+        // position: fixed;
+        top: 0;
+        background: #f7f7f7;
+        padding: 8px;
+        width: 100%;
+        z-index: 10;
+
+
+        &__icon{
+            transform: scale(0.8);
+            margin-right: 24px;
+        }
+    }
+
+    // Desktop Styling
+    @media screen and (min-width: $screen-width) {
+      
+
+    }
+}
+
+.popup {
+    // Mobile Styling
+    @media screen and (max-width: $screen-width) {
+        position: absolute;
+        
+
+
+        &__icon{
+            transform: scale(0.8);
+            margin-right: 24px;
+        }
+
+        &__modal{
+            width: calc(100vw);
+            height: 100%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // background: blue;
+            z-index: 10;
+            
+        }
+
+        &__modal2{
+            z-index: 2;
+            width: 100vw;
+            height: 200%;
+            position: absolute;
+            background: black;
+            opacity: 0.5;
+            margin-left: -24px;
+        }
+
+        &__container {
+            background-color: white;
+            padding: 16px;
+            border-radius: 4px;
+            z-index: 10;
+            margin-right: 24px;
+            width: 83%;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        &__text {
+            font-size: 14px;
+        }
+
+        &__buttons {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &__b1 {
+            margin: 16px 46px 0;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }
+
+    // Desktop Styling
+    @media screen and (min-width: $screen-width) {
+      
+
+    }
+}
+
+
+
+
+
+
+
+.mobile-only{
+     // Desktop Styling
+     @media screen and (min-width: $screen-width) {
+         display: none  !important;
+     }
+}
+
+.desktop-only {
+    // Mobile Styling
+    @media screen and (max-width: $screen-width) {
+        display: none  !important;
+    }
+}
